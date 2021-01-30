@@ -1,0 +1,67 @@
+@import "../../styles/variables.scss";
+
+.header {
+  width: 100%;
+  height: 56px;
+  background-color: $yellow;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.1);
+}
+
+.bar {
+  display: flex;
+  align-items: center;
+  width: 90%;
+
+  @media only screen and (min-width: $desktop) {
+    max-width: 80%;
+  }
+
+  @media only screen and (min-width: $bigScreen) {
+    max-width: 70%;
+  }
+
+  .logo {
+    height: 34px;
+    width: 44px;
+    margin: 0 20px;
+  }
+
+  input {
+    padding: 1px 0 1px 1rem;
+    height: 39px;
+    width: 100%;
+    border: 0;
+    outline: none;
+    border-radius: 4px 0 0 4px;
+    color: $grayMedium;
+    font-size: $p;
+    line-height: 23px;
+    font-weight: 200;
+  }
+
+  .button {
+    height: 39px;
+    width: 46px;
+    background-color: $white;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    cursor: pointer;
+
+    .centerIcon {
+      width: 46px;
+      height: 21px;
+      display: flex;
+      justify-content: center;
+      border-left: 1px solid $grayLight;
+    }
+
+    .icon {
+      height: 21px;
+      width: 16px;
+      position: relative;
+    }
+  }
+}

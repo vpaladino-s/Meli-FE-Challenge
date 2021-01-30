@@ -1,0 +1,17 @@
+@import '../../styles/variables.scss';
+
+.breadcrumb {
+  display: flex;
+  height: 46px;
+  max-width: 90%;
+  margin: 0 auto;
+  align-items: center;
+
+  @media only screen and (min-width: $desktop) {
+    max-width: 80%;
+  }
+
+  @media only screen and (min-width: $bigScreen) {
+    max-width: 70%;
+  }
+}

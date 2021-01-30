@@ -1,0 +1,16 @@
+@import '../../styles/variables.scss';
+
+.container {
+    margin: 0 auto 5% auto;
+    max-width: 90%;
+    border-radius: 4px;
+    overflow: hidden;
+
+    @media only screen and (min-width: $desktop) {
+        width: 80%;
+    }
+
+    @media only screen and (min-width: $bigScreen) {
+        width: 70%;
+    }
+  };

@@ -1,8 +1,8 @@
 const { hot } = require("react-hot-loader/root");
 const React =  require("react");
-require("./styles/styles.scss");
 const { Route, Switch } = require("react-router-dom");
 const { Helmet } = require("react-helmet");
+require("./styles/styles");
 
 const Layout = require("./components/Layout/Layout");
 
@@ -13,8 +13,7 @@ const ContextProvider = require("./contexts/provider");
 const App = () => {
   return (
     <>
-      {/* Se utiliza Helmet para SEO */}
-      <Helmet>
+      <Helmet> {/* Se utiliza Helmet para SEO */}
         <title>Mercado Libre</title>
         <meta name="description" content="Mercado Libre App" />
       </Helmet>
