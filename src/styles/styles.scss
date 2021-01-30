@@ -1,0 +1,12 @@
+@import './variables.scss';
+
+*, html{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: $background;
+  font-family: 'Roboto', sans-serif;
+}

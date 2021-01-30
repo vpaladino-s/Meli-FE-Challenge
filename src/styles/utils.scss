@@ -1,0 +1,20 @@
+@mixin flexCenter($direction:column) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+  
+}
+
+@mixin grid(){
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.bold {
+    font-weight: 900;
+}
+
+.strong {
+    font-weight: 600;
+}
